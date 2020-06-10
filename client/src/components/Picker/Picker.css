@@ -1,0 +1,49 @@
+.form-inline {
+    display: block;
+    padding: 10px;
+}
+
+.form-inline select {
+    cursor: pointer;
+    opacity: .7;
+}
+
+.form-inline select option {
+    background: #003845;
+    cursor: pointer !important;
+    color: #fff;
+}
+
+.search p {
+    font-weight: bold;
+}
+
+.form-inline input {
+    /* background: transparent; */
+    opacity: .7;
+}
+
+.form-inline input::placeholder {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.form-inline button {
+    border-color: #fff;
+    color: #fff;
+}
+
+.form-inline button:hover {
+    background: #fff;
+    border-color: #000;
+    color: #000;
+}
+
+.searchInfo {
+    border-left: 2px solid gold;
+}
+
+p.pickerText {
+    color: #000 !important;
+    font-family: cursive;
+}

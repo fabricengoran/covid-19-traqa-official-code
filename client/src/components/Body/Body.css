@@ -1,0 +1,519 @@
+body {
+    font: 400 15px/1.8 courier, cursive;
+    color: #777;
+    background: #fff !important;
+    letter-spacing: .1em;
+}
+
+button,
+input {
+    outline: none !important;
+}
+
+button:hover,
+input:hover {
+    transition: all 1s ease;
+}
+
+.card {
+    font-family: cursive;
+    margin: 2% 0 !important;
+    /* border : #777 1px solid; */
+    transition: all .7s ease;
+}
+
+.card:hover {
+    box-shadow: 0px 10px 40px rgba(57, 56, 61, 0.605);
+    transform: scale(1.01)
+}
+
+.cards {
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.card-text {
+    font-size: 2rem;
+}
+
+.infected {
+    border-bottom: 10px solid rgba(255, 255, 0, 0.8);
+    /* transition: all 300ms ease-in; */
+    animation-name: card1;
+    animation-duration: 1.5s;
+}
+
+.recovered {
+    border-bottom: 10px solid #28a745;
+    /* transition: all 300ms ease-in; */
+    animation-name: card2;
+    animation-duration: 1.5s;
+}
+
+.deaths {
+    border-bottom: 10px solid rgba(158, 83, 83, 0.8);
+    /* transition: all 300ms ease-in; */
+    animation-name: card3;
+    animation-duration: 1.5s;
+}
+
+@keyframes card1 {
+    0% {
+        transform: translateX(-15%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes card2 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes card3 {
+    0% {
+        transform: translateX(15%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.infected p {
+    color: rgba(235, 235, 12, 0.9);
+}
+
+.recovered p {
+    color: #28a745;
+}
+
+.deaths p {
+    color: rgba(158, 83, 83, 0.8);
+}
+
+.infected,
+.recovered,
+.deaths {
+    border-radius: 0 0 10px 10px;
+}
+
+.report p {
+    color: #333;
+}
+
+.noSearch {
+    margin: 70px;
+    padding: 40px;
+}
+
+.noSearch h5 {
+    font-weight: bold;
+}
+
+.display {
+    padding-top: 20px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.display h3 {
+    letter-spacing: .2em;
+    font-weight: bold;
+}
+
+.backgroundImg {
+    background: url('../../images/showcase.jpeg');
+    background-attachment: fixed;
+    color: whitesmoke;
+    background-size: cover;
+}
+
+.nav-buttons {
+    font-family: cursive;
+    margin: 20px;
+}
+
+.nav-buttons button {
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.nav-buttons button:hover {
+    color: #9ebaf7;
+    font-size: 1.5rem;
+    background: #eee;
+}
+
+.nav-buttons button.active {
+    color: #9ebaf7;
+}
+
+.dots span {
+    font-family: cursive;
+    font-size: 2rem;
+    display: flex;
+}
+
+.head-text {
+    transition: all 300ms ease-in;
+    border-color: var(--main-color) !important;
+    animation-name: head;
+    animation-duration: 1.5s;
+}
+
+@keyframes head {
+    0% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.dots .dot1 {
+    transform: scale(1);
+    display: block;
+    animation-name: loading1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.dots .dot2 {
+    transform: scale(1);
+    display: block;
+    animation-name: loading2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.dots .dot3 {
+    transform: scale(1);
+    display: block;
+    animation-name: loading3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes loading1 {
+    0% {
+        transform: scale(1);
+        opacity: .2;
+    }
+    25% {
+        transform: scale(1.7);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+        opacity: .2;
+    }
+    75% {
+        transform: scale(1.7);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: .2;
+    }
+}
+
+@keyframes loading2 {
+    0% {
+        transform: scale(1);
+        opacity: .2;
+    }
+    25% {
+        transform: scale(1.7);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+        opacity: .2;
+    }
+    75% {
+        transform: scale(1.7);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: .2;
+    }
+}
+
+@keyframes loading3 {
+    0% {
+        transform: scale(1);
+        opacity: .2;
+    }
+    25% {
+        transform: scale(1.7);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+        opacity: .2;
+    }
+    75% {
+        transform: scale(1.7);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: .2;
+    }
+}
+
+.dot {
+    font-family: cursive;
+    font-size: 3rem;
+    margin-top: -15px;
+}
+
+.dot .dot4:hover,
+.dot5:hover,
+.dot6:hover {
+    color: #777 !important;
+}
+
+.dot .dot4 {
+    transform: scale(1);
+    display: block;
+    animation-name: loading4;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.dot .dot5 {
+    transform: scale(1);
+    display: block;
+    animation-name: loading5;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.dot .dot6 {
+    transform: scale(1);
+    display: block;
+    animation-name: loading6;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes loading4 {
+    0% {
+        transform: scale(1);
+        color: #28a745;
+    }
+    25% {
+        transform: scale(1.7);
+        color: #28a745;
+    }
+    50% {
+        transform: scale(1);
+        color: #000;
+    }
+    75% {
+        transform: scale(1.7);
+        color: #f7f306;
+    }
+    100% {
+        transform: scale(1);
+        color: #000;
+    }
+}
+
+@keyframes loading5 {
+    0% {
+        transform: scale(1);
+        color: #000;
+    }
+    25% {
+        transform: scale(1.5);
+        color: #dc3534;
+    }
+    50% {
+        transform: scale(1);
+        color: #000;
+    }
+    75% {
+        transform: scale(1.5);
+        color: #dc3534;
+    }
+    100% {
+        transform: scale(1);
+        color: #000;
+    }
+}
+
+@keyframes loading6 {
+    0% {
+        transform: scale(1);
+        color: #f7f306;
+    }
+    25% {
+        transform: scale(1.7);
+        color: #f7f306;
+    }
+    50% {
+        transform: scale(1);
+        color: #000;
+    }
+    75% {
+        transform: scale(1.7);
+        color: #28a745;
+    }
+    100% {
+        transform: scale(1);
+        color: #000;
+    }
+}
+
+@keyframes heartBeat {
+    0% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    25% {
+        transform: scale(1.1);
+        opacity: .5;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    75% {
+        transform: scale(1.1);
+        opacity: .5;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+}
+
+.loadPage {
+    color: #003845;
+    transform: translateY(300%);
+    cursor: pointer;
+}
+
+.loadPage h1 span {
+    font-size: 3rem;
+}
+
+.download-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.download-btn button {
+    margin-top: 30px;
+    margin-bottom: -10px;
+}
+
+.download-btn .badge {
+    border-radius: 50px;
+    color: #fff;
+    position: absolute;
+    margin-top: 1.5rem;
+    margin-left: 5rem;
+}
+
+
+/* Download Modal */
+
+.download-msg {
+    color: #003845;
+    font-weight: bold;
+    text-align: center;
+}
+
+#downloadModal h4 {
+    font-size: 1.5rem !important;
+}
+
+#downloadModal .modal-header,
+#downloadModal h4,
+#downloadModal .close {
+    background-color: #003845;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+}
+
+#downloadModal .modal-header,
+#downloadModal .modal-body {
+    padding: 20px 25px;
+}
+
+
+/* Welcome Modal */
+
+.welcome-msg {
+    color: #003845;
+    font-weight: bold !important;
+    text-align: center;
+}
+
+#welcomeModal h4 {
+    font-size: 1.5rem !important;
+}
+
+#welcomeModal .modal-header,
+#welcomeModal h4,
+#welcomeModal .close {
+    background-color: #003845;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+}
+
+#welcomeModal .modal-header,
+#welcomeModal .modal-body {
+    padding: 20px 25px;
+}
+
+.ranking {
+    color: #9ebaf7;
+}
+
+@media only screen and (min-width: 992px) {
+    .infected {
+        border-radius: 0 0 0 15px;
+    }
+    .recovered {
+        border-radius: 0 0 10px 10px;
+    }
+    .deaths {
+        border-radius: 0 0 15px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .card img {
+        display: none;
+    }
+    .head-text {
+        font-size: 1.1rem;
+    }
+    .love-icon {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .download-btn {
+        display: none;
+    }
+}

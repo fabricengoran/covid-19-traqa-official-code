@@ -1,0 +1,158 @@
+footer {
+    padding: 60px 10px 45px 10px;
+    margin-top: 5%;
+    background: #003845;
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none !important;
+    color: whitesmoke;
+}
+
+#footerForm {
+    margin: 40px;
+    padding: 20px;
+    border: #fff 2px solid;
+    border-radius: 5px;
+}
+
+#footerForm button {
+    color: #003845;
+    background: #fff !important;
+    border: 1px #003845 solid;
+}
+
+#footerForm button:hover {
+    color: #fff;
+    background: #003845 !important;
+    border: 1px #fff solid !important;
+}
+
+.list-inline {
+    display: flex;
+}
+
+.list-inline li:first-child a,
+.list-inline li:nth-child(2) a,
+.list-inline li:nth-child(3) a,
+.list-inline li:last-child a {
+    color: #fff !important;
+    font-size: 1.5rem;
+    transition: color .7s ease;
+}
+
+.list-inline li:first-child a:hover {
+    color: rgb(1, 114, 243) !important;
+    font-size: 1.6rem;
+}
+
+.list-inline li:nth-child(2) a:hover {
+    color: green !important;
+    font-size: 1.6rem;
+}
+
+.list-inline li:nth-child(3) a:hover {
+    color: rgb(63, 15, 238) !important;
+    font-size: 1.6rem;
+}
+
+.list-inline li:last-child a:hover {
+    color: rgb(78, 175, 240) !important;
+    font-size: 1.6rem;
+}
+
+.infoContact,
+.infoAbout {
+    text-align: center;
+}
+
+.infoContact p {
+    color: #fff;
+}
+
+.infoAbout p b {
+    color: #0652f8 !important;
+}
+
+.infoAbout p,
+.infoContact small {
+    color: whitesmoke !important;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.infoContact span {
+    color: #0652f8;
+    font-weight: bold;
+}
+
+.infoContact .text-white {
+    color: #9ebaf7 !important;
+}
+
+.copyright {
+    color: #9ebaf7;
+    font-weight: bold;
+}
+
+.trackcorona b,
+.trackcorona a {
+    color: #9ebaf7 !important;
+}
+
+.trackcorona a:hover {
+    color: #0652f8 !important;
+}
+
+small.text-danger {
+    font-weight: bold;
+}
+
+footer h3 {
+    color: #9ebaf7;
+}
+
+footer h3.page-header {
+    color: whitesmoke;
+}
+
+.feedBack-msg {
+    font-weight: bold;
+    text-align: center;
+}
+
+.feedBack-msg em {
+    color: #003845;
+}
+
+.feedBackModal .modal-header,
+.feedBackModal h4,
+.feedBackModal .close {
+    background-color: #003845;
+    color: #fff !important;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.feedBackModal .modal-header,
+.feedBackModal .modal-body {
+    padding: 20px 25px;
+}
+
+#successModal .modal-body p {
+    color: green !important;
+}
+
+#successModal .modal-body+p {
+    color: #003845 !important;
+}
+
+#errorModal .modal-body p {
+    color: red !important;
+}
+
+#errorModal .modal-body li {
+    color: #003845;
+}
