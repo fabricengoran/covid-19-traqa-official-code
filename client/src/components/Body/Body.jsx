@@ -176,6 +176,10 @@ class Body extends Component {
         }
     }
 
+    preventTop = () => {
+        $('#welcomeModal').modal('hide');
+    }
+
     render() {
         let { confirmed, recovered, deaths, lastUpdate } =  this.state.data;
 
@@ -283,7 +287,7 @@ class Body extends Component {
                                 <div className="modal-body">
                                     <p className="welcome-msg">The <span className="ranking"><FontAwesomeIcon icon={["fas", "trophy"]} color="gold" />n#1</span> corona virus tracker app.</p>
                                     <hr />
-                                    <p>If you're new here, don't forget to tell us what you think (what you like/dislike or what features you wish we'd implemented) using the <b>feedback platform</b> located <em>center-right</em> of the page OR message us using the <b>message form</b> located <a data-toggle1="tooltip" title="To Message Form" id="to-form" href="#footerForm">bottom</a> of the page. Thank you</p>
+                                    <p>If you're new here, don't forget to tell us what you think (what you like/dislike or what features you wish we'd implemented) using the <b>feedback platform</b> located <em>center-right</em> of the page OR message us using the <b>message form</b> located <a onClick={() => this.preventTop()} data-toggle1="tooltip" title="To Message Form" id="to-form" href="#footerForm">bottom</a> of the page. Thank you</p>
                                 </div>
                             </div>
                         </div>
