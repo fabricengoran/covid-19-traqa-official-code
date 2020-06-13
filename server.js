@@ -18,10 +18,10 @@ app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
 
-app.use('client/public', express.static(path.join(__dirname, 'client/public')));
+app.use('client/build', express.static(path.join(__dirname, 'client/build')));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'client/public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
   // res.send('index.html');
   // res.send('This backend is just for handling mails');
 })
