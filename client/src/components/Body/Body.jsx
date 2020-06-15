@@ -268,7 +268,7 @@ class Body extends Component {
                                     <button type="button" className="close" data-dismiss="modal">×</button>
                                 </div>
                                 <div className="modal-body">
-                                    <p className="download-msg"><a href="./download/covid-traqa%20v1.1.apk">Click here</a> if download didn't start.</p>
+                                    <p className="download-msg"><a href="./download/covid-traqa%20v2.0.apk">Click here</a> if download didn't start.</p>
                                 </div>
                             </div>
                         </div>
