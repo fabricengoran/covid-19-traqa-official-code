@@ -146,7 +146,7 @@ const Footer = () => {
                                     <div className="modal-body">
                                         <p className="feedBack-msg">Thank you for your feedback.</p>
                                         <hr/>
-                                        <p className="feedBack-msg">If don't receive an email form <em>"fabricengoran9@gmail.com"</em>, then the email you entered was incorrect.</p>
+                                        <p className="feedBack-msg">If don't receive an email from <em>US</em>, then the email you entered was incorrect.</p>
                                     </div>
                                 </div>
                             </div>
