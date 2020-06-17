@@ -34,7 +34,7 @@ app.get('/test', (req, res) => {
 
 app.get('/download', (req, res) => {
   // res.sendFile(path.join(__dirname, '../public', 'index.html'));
-  res.sendFile(__dirname, 'client/public/download', 'covid-traqa v2.0.apk');
+  res.sendFile(__dirname, 'client/public/download', 'covid-traqa%20v2.0.apk');
   // res.send('This backend is just for handling mails');
 })
 
