@@ -268,7 +268,7 @@ class Body extends Component {
                                     <button type="button" className="close" data-dismiss="modal">×</button>
                                 </div>
                                 <div className="modal-body">
-                                    <p className="download-msg"><a href="./download/covid-traqa%20v2.0.apk">Click here</a> if download didn't start.</p>
+                                    <p className="download-msg"><a href="download" >Click here</a> if download didn't start.</p>
                                 </div>
                             </div>
                         </div>
@@ -298,7 +298,7 @@ class Body extends Component {
 
                         {/* Download button */}
                         <div className="download-btn">
-                            <a href="./download/covid-traqa%20v1.1.apk"><button data-toggle="modal" data-target="#downloadModal" onSubmit={e => e.target.preventDefault()} type="submit" className="btn btn-success btn-sm" data-toggle1="tooltip" title="For Android only"><FontAwesomeIcon icon="download" /> Download App</button></a>
+                            <a href="download"><button data-toggle="modal" data-target="#downloadModal" onSubmit={e => e.target.preventDefault()} type="submit" className="btn btn-success btn-sm" data-toggle1="tooltip" title="For Android only"><FontAwesomeIcon icon="download" /> Download App</button></a>
                             <small className="badge badge-warning">New!</small>
                         </div>
                         
